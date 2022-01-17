@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300;400&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.heading h2 {
+	padding-left: 10px;
+}
+
+.container {
+	height: 550px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	height: 300px;
+	width: 70%;
+	background-color: rgb(48, 151, 230);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+.form form {
+	height: 100%;
+	margin: auto;
+	/* margin-top: 3rem; */
+}
+
+.control {
+	margin: 8%;
+	display: inline-block;
+	width: 60%;
+	margin-bottom: 12%;
+	position: relative;
+}
+
+.form button {
+	/* margin-top: 30%; */
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	border: 0;
+	width: 6rem;
+	height: 2rem;
+	border-radius: 5px;
+	background-color: white;
+	transition: all 0.3s;
+}
+
+.form button:hover {
+	font-size: medium;
+	box-shadow: 2px 5px 10px rgb(54, 35, 141);
+}
+
+.select {
+	margin-top: 40%;
+	font-size: 1.1rem;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 100px;
+	transition: all 0.3s;
+}
+
+.select:hover {
+	margin-left: 15%;
+}
+
+.label {
+	position: absolute;
+	left: 60%;
+	top: 10%;
+	cursor: pointer;
+}
+
+.post-container {
+	margin: 0 18%;
+	/* border: solid 2px blue; */
+}
+
+.post {
+	border: solid 2px rgb(240, 240, 241);
+	background-color: rgb(240, 240, 240);
+	border-radius: 6px;
+	margin: 4% 0;
+	padding: 10px 0 10px 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.delete {
+	cursor: pointer;
+	border: 0;
+	width: 6rem;
+	height: 2rem;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.delete:hover {
+	background-color: white;
+}
+
+.message {
+	text-align: center;
+	font-size: large;
+	margin-top: -4%;
 }
